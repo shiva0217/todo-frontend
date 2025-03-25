@@ -1,0 +1,109 @@
+.login-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: rgb(9, 1, 1);
+    margin-bottom: 85px;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title {
+    font-size: 18px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: gray;
+    top: 0px;
+  }
+  
+  .features {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  
+  .forgot-password {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-text {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 322px;
+  }
+  
+  .password-field {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,30 @@
+.task-summary {
+    margin: 10px;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .task-table th, 
+  .task-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .task-table thead {
+    background-color: #f4f4f4;
+  }
+  
+  .task-table th {
+    font-weight: bold;
+    border: none;
+    fill: bisque;
+  }
+ 
+  
+  
+  
