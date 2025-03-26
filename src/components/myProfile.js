@@ -11,7 +11,7 @@ const ProfileAccordion = ({ userId }) => {
     useEffect(() => {
         let isMounted = true;
         const userId = localStorage.getItem("id");
-        axios.get(`http://localhost:5000/api/users/${userId}`)
+        axios.get(`https://todo-backend1-2.onrender.com/api/users/${userId}`)
             .then((res) => setProfileData(res.data))
             .catch((err) => console.error("Error fetching user:", err));
         return () => { isMounted = false };
@@ -26,7 +26,7 @@ const ProfileAccordion = ({ userId }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const userId = localStorage.getItem("id");
-        axios.put(`http://localhost:5000/api/users/${userId}`, profileData)
+        axios.put(`https://todo-backend1-2.onrender.com/api/users/${userId}`, profileData)
             .then((res) => {
                 alert("Profile updated successfully!");
                 setOpen(false); // Close the modal

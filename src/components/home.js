@@ -27,7 +27,7 @@ const Home = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("https://todo-backend1-2.onrender.com/api/auth/login", {
         username,
         password,
       });
@@ -48,7 +48,7 @@ const Home = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/register", {
+      const response = await axios.post("https://todo-backend1-2.onrender.com/api/auth/register", {
         fullName,
         username,
         email,

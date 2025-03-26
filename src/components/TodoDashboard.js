@@ -35,7 +35,7 @@ export default function TodoDashboard() {
   const fetchUserDetails = async () => {
     try {
       const userId = localStorage.getItem("id"); // Ensure this is correct
-      const response = await axios.get(`http://localhost:5000/api/users/${userId}`);
+      const response = await axios.get(`https://todo-backend1-2.onrender.com/api/users/${userId}`);
       setUserName(response.data.fullName);
       setUserEmail(response.data.email);
     } catch (error) {
@@ -47,7 +47,7 @@ export default function TodoDashboard() {
   const fetchTasks = async () => {
     try {
       setLoadingTasks(true);
-      const response = await axios.get(`http://localhost:5000/api/tasks/user/${userId}`, {
+      const response = await axios.get(`https://todo-backend1-2.onrender.com/api/tasks/user/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks(response.data);
@@ -63,7 +63,7 @@ export default function TodoDashboard() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tasks",
+        "https://todo-backend1-2.onrender.com/api/tasks",
         { text: newTask, userId },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -78,7 +78,7 @@ export default function TodoDashboard() {
   const toggleComplete = async (id, completed) => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `http://https://todo-backend1-2.onrender.com/api/tasks/${id}`,
         { completed: !completed },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -91,7 +91,7 @@ export default function TodoDashboard() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://todo-backend1-2.onrender.com/api/tasks/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks((prev) => prev.filter((task) => task._id !== id));
@@ -110,7 +110,7 @@ export default function TodoDashboard() {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://todo-backend1-2.onrender.com/api/tasks/${id}`,
         { text: editText },
         { headers: { Authorization: `Bearer ${token}` } }
       );
