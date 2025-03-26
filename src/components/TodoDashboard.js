@@ -78,7 +78,7 @@ export default function TodoDashboard() {
   const toggleComplete = async (id, completed) => {
     try {
       const res = await axios.put(
-        `http://todo-backend1-2.onrender.com/api/tasks/${id}`,
+        `https://todo-backend1-2.onrender.com/api/tasks/${id}`,
         { completed: !completed },
         { headers: { Authorization: `Bearer ${token}` } }
       );
