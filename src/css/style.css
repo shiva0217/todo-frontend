@@ -8,7 +8,7 @@ body {
 
 /* Dashboard Layout */
 .dashboard-container {
-  display: block;
+  display: ruby;
   flex-wrap: wrap;
   height: 100vh;
   padding: 20px;
